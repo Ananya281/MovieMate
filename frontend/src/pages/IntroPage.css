@@ -1,0 +1,55 @@
+.intro-page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .intro-page-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with opacity */
+  }
+  
+  .intro-page-content {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .intro-page-logo {
+    width: 1000px;
+    height: 500px;
+    object-fit: contain;
+  }
+  
+  .intro-page-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 2rem;
+  }
+  
+  .intro-page-buttons button {
+    padding: 0.75rem 2rem;
+    margin: 0 1rem;
+    color: white;
+    font-size: 1.25rem;
+    border-radius: 0.5rem;
+  }
+  
+  .intro-page-buttons .login-btn {
+    background-color: #4299e1;
+  }
+  
+  .intro-page-buttons .register-btn {
+    background-color: #48bb78;
+  }
+  

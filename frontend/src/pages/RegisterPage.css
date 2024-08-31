@@ -1,0 +1,40 @@
+/* Ensure the input fields blend into the theme */
+input {
+    background-color: rgba(55, 55, 55, 0.8); /* Dark background for inputs */
+    color: white; /* White text color */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Lighter border color */
+    padding: 10px;
+    border-radius: 0.375rem; /* Same border radius as Tailwind */
+  }
+  
+  /* Add focus styles to inputs */
+  input:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.5); /* Change border color on focus */
+  }
+  
+  /* Styling the button to match the theme */
+  button {
+    background-color: #ef4444; /* Red button background */
+    color: white; /* White text color */
+    padding: 10px;
+    border-radius: 0.375rem; /* Rounded corners */
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover state for the button */
+  button:hover {
+    background-color: #dc2626; /* Darker red on hover */
+  }
+  
+  /* Link styles to match the theme */
+  a {
+    color: #ef4444; /* Red link color */
+    text-decoration: none;
+  }
+  
+  /* Add underline on hover */
+  a:hover {
+    text-decoration: underline;
+  }
+  
