@@ -1,5 +1,4 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 
 // Import all the images
 import actionPoster from '../images/movie-poster/action.avif';
@@ -16,7 +15,6 @@ import romancePoster from '../images/movie-poster/romance.jpg';
 import thrillerPoster from '../images/movie-poster/thriller.jpeg';
 
 export default function CategoriesPage() {
-  const navigate = useNavigate();
 
   const categories = [
     { name: "Action", image: actionPoster },
@@ -45,7 +43,6 @@ export default function CategoriesPage() {
             <div
               key={category.name}
               className="relative flex items-center justify-center h-40 bg-gray-200 text-xl font-semibold rounded-lg shadow-md cursor-pointer"
-              // onClick={() => navigate(`/category/${category.name.toLowerCase()}`)}
               style={{
                 backgroundImage: `url(${category.image})`,
                 backgroundSize: 'cover',
