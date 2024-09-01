@@ -18,7 +18,7 @@ export default function LoginPage() {
       alert("Password has left Blank!");
     } else {
       // Send login request to the Flask backend
-      axios.post('http://127.0.0.1:5000/login', {
+      axios.post('https://moviebackend-so5g.onrender.com/login', {
         email: email,
         password: password
       })
