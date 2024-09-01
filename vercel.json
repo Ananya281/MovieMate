@@ -1,12 +1,27 @@
 {
-    "routes":[
-        {
-            "src":"/",
-            "dest":"/"
-        },
-        {
-            "src":"/test",
-            "dest":"/"
+    "version": 2,
+    "builds": [
+      {
+        "src": "frontend/package.json",
+        "use": "@vercel/react",
+        "config": {
+          "distDir": "frontend/build"
         }
+      },
+      {
+        "src": "backend/requirements.txt",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/api/(.*)",
+        "dest": "/backend/$1"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/frontend/$1"
+      }
     ]
-}
+  }
+  
