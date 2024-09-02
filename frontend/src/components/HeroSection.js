@@ -15,7 +15,7 @@ export default function HeroSection() {
     setLoading(true);
 
     try {
-      const response = await axios.post('http://localhost:5000/recommend_by_query', { query });
+      const response = await axios.post('https://moviemate-3.onrender.com/recommend_by_query', { query });
       console.log("Recommendations data:", response.data);
 
       if (Array.isArray(response.data) && response.data.length > 0) {

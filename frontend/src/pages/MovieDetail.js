@@ -66,7 +66,7 @@ export default function MovieDetail() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const movieResponse = await axios.get(`http://localhost:5000/moviedetail/${encodeURIComponent(title)}`);
+        const movieResponse = await axios.get(`https://moviemate-3.onrender.com/moviedetail/${encodeURIComponent(title)}`);
         const wikiLink = await fetchWikipediaLink(movieResponse.data.title);
         setMovie({ ...movieResponse.data, wiki: wikiLink });
         const trailer = await fetchTrailerUrl(movieResponse.data.title);
