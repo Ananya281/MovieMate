@@ -11,7 +11,7 @@ export default function RegisterPage() {
 
   const registerUser = (e) => {
     e.preventDefault(); // Prevent default form submission behavior
-    axios.post('https://moviebackend-so5g.onrender.com/signup', {
+    axios.post('https://moviemate-3.onrender.com/signup', {
         name:name,
         email: email,
         password: password

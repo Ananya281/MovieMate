@@ -21,14 +21,14 @@ export default function HomePage() {
       try {
         const { selectedGenres, selectedActors } = location.state || {};
         const [recommendedResponse, actionResponse, comedyResponse, romanceResponse, thrillerResponse] = await Promise.all([
-          axios.post("https://moviebackend-so5g.onrender.com/recommend", {
+          axios.post("https://moviemate-3.onrender.com/recommend", {
             genres: selectedGenres,
             actors: selectedActors
           }),
-          axios.get("https://moviebackend-so5g.onrender.com/top_action_movies"),
-          axios.get("https://moviebackend-so5g.onrender.com/top_comedy_movies"),
-          axios.get("https://moviebackend-so5g.onrender.com/top_romance_movies"),
-          axios.get("https://moviebackend-so5g.onrender.com/top_thriller_movies"),
+          axios.get("https://moviemate-3.onrender.com/top_action_movies"),
+          axios.get("https://moviemate-3.onrender.com/top_comedy_movies"),
+          axios.get("https://moviemate-3.onrender.com/top_romance_movies"),
+          axios.get("https://moviemate-3.onrender.com/top_thriller_movies"),
         ]);
         console.log("Recommended Movies:", recommendedResponse.data);  // Check data here
         console.log("Top Action Movies:", actionResponse.data);  // Check data here
