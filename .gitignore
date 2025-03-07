@@ -1,0 +1,23 @@
+# Node.js dependencies
+node_modules/
+
+# Build output
+frontend/build/
+
+# Logs
+*.log
+
+# Environment files
+.env
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Vercel configuration
+.vercel/
+.vercel

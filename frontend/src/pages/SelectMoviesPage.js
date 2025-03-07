@@ -22,7 +22,6 @@ export default function SelectMoviesPage() {
 
   // State to manage selected genres
   const [selectedGenres, setSelectedGenres] = useState([]);
-  const [error, setError] = useState(null);
 
   const genres = [
     { name: "Action", image: actionPoster },
